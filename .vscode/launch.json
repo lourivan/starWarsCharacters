@@ -1,0 +1,74 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug iOS Prod",
+            "platform": "ios",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "launch",
+            "sourceMaps": true,
+            "envFile": "${workspaceFolder}/.env.prod",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "ios:prod",
+          },
+          {
+            "name": "iOS UAT",
+            "platform": "ios",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "launch",
+            "sourceMaps": true,
+            "envFile": "${workspaceFolder}/.env.uat",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "ios:uat",
+          },
+          {
+            "name": "iOS Dev",
+            "platform": "ios",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "launch",
+            "sourceMaps": true,
+            "envFile": "${workspaceFolder}/.env",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "ios:dev",
+          },
+          {
+            "name": "Android Prod",
+            "platform": "android",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "launch",
+            "sourceMaps": true,
+            "envFile": "${workspaceFolder}/.env.prod",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "android:prod",
+          },
+          {
+            "name": "Android Dev",
+            "platform": "android",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "launch",
+            "sourceMaps": true,
+            "envFile": "${workspaceFolder}/.env.dev",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "android:dev",
+          },
+          {
+            "name": "Android Uat",
+            "platform": "android",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "launch",
+            "sourceMaps": true,
+            "envFile": "${workspaceFolder}/.env.prod",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "android:prod",
+          }
+    ]
+}
