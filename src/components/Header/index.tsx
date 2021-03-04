@@ -31,7 +31,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const render = useMemo(
     () => (type != 'default' ? <PageHeader /> : <DefaultHeader />),
-    [title],
+    [type, title, subtitle, onBack],
   )
 
   return render

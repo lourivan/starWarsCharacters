@@ -18,7 +18,6 @@ const Home: React.FC = ({ navigation }: any) => {
 
   const getPeople = useCallback(async (page) => {
     try {
-      console.log('loading data')
       if (typeof page == 'string') {
         const { data } = await getPeopleList(page)
         const { results } = data
