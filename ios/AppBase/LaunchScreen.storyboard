@@ -16,14 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SplashImage" translatesAutoresizingMaskIntoConstraints="NO" id="7Fy-nw-9oH">
-                                <rect key="frame" x="121" y="287" width="140" height="93"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashImage" translatesAutoresizingMaskIntoConstraints="NO" id="fpw-N3-PPN">
+                                <rect key="frame" x="75" y="258.5" width="225" height="150.5"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7Fy-nw-9oH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DrN-9E-ueT"/>
-                            <constraint firstItem="7Fy-nw-9oH" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rXh-UW-dG2"/>
+                            <constraint firstItem="fpw-N3-PPN" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EAG-4g-0lo"/>
+                            <constraint firstItem="fpw-N3-PPN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XgQ-Gg-qBy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
@@ -34,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SplashImage" width="450" height="301"/>
+        <image name="SplashImage" width="225" height="150.5"/>
     </resources>
 </document>

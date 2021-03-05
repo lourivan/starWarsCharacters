@@ -10,7 +10,7 @@
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "clean": "rm -rf ios/Pods && rm -rf ios/Podfile.lock",
     "devtools": "npx react-devtools@3",
-    "commit": "git-cz" 
+    "commit": "git-cz"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.13.0",
@@ -70,6 +70,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "jest": {
+    "preset": "react-native"
   },
   "rnpm": {
     "assets": [
