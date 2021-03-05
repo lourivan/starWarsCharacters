@@ -54,6 +54,7 @@ buck-out/
 
 # Bundle artifact
 *.jsbundle
-
+.jest/
+__tests__/__snapshots__/
 # CocoaPods
 /ios/Pods/

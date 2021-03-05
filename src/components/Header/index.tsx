@@ -3,7 +3,9 @@ import { Appbar } from 'react-native-paper'
 
 import * as S from './style'
 
-interface HeaderProps {
+import Logo from '../../../assets/images/logo.png'
+
+export interface HeaderProps {
   type?: 'default' | 'page'
   onBack?: () => void
   title?: string
@@ -16,9 +18,13 @@ export const Header: React.FC<HeaderProps> = ({
   title,
   subtitle,
 }) => {
+  const TAG = 'Header_component'
   const DefaultHeader = () => (
     <S.Container>
-      <S.ImageHeader source={require('assets/images/logo.png')} />
+      <S.ImageHeader
+        testID={`${TAG}_default_image`}
+        source={require('../../../assets/images/logo.png')}
+      />
     </S.Container>
   )
 

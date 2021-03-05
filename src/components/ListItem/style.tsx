@@ -16,7 +16,7 @@ export const Item = styled(List.Item).attrs({
   border-bottom-color: #bcbaba;
 `
 export const IconRight = styled.Image.attrs({
-  source: require('assets/images/arrowLeft.png'),
+  source: require('../../../assets/images/arrowLeft.png'),
 })`
   width: 8px;
   height: 18px;
