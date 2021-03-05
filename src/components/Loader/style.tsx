@@ -5,7 +5,7 @@ export const ModalBackground = styled.View`
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  background-color: ${({ theme }) => theme.colors.primary}};
+  background-color: ${({ theme }) => theme.colors.text}};
 `
 export const ActivityIndicatorWrapper = styled.View`
   background-color: #ffffff;

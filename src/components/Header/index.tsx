@@ -25,7 +25,12 @@ export const Header: React.FC<HeaderProps> = ({
   const PageHeader = () => (
     <Appbar.Header>
       <Appbar.BackAction onPress={onBack} />
-      <Appbar.Content title={title} subtitle={subtitle} />
+      <Appbar.Content
+        title={title}
+        subtitle={subtitle}
+        titleStyle={{ fontSize: 20 }}
+        subtitleStyle={{ fontSize: 16 }}
+      />
     </Appbar.Header>
   )
 

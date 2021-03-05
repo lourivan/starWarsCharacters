@@ -1,21 +1,20 @@
 import React from 'react'
-import { ActivityIndicator, Modal } from 'react-native'
+import { Modal } from 'react-native'
+import LottieView from 'lottie-react-native'
 
 import * as S from './style'
 
 export const Loader = (props) => {
   const { loading } = props
   return (
-    <Modal
-      transparent={true}
-      animationType={'none'}
-      visible={loading}
-      onRequestClose={() => {}}
-    >
+    <Modal transparent={true} animationType={'none'} visible={loading}>
       <S.ModalBackground>
-        <S.ActivityIndicatorWrapper>
-          <ActivityIndicator animating={loading} />
-        </S.ActivityIndicatorWrapper>
+        <LottieView
+          source={require('assets/lottie/star-wars.json')}
+          autoPlay
+          loop
+          style={{ width: 200, height: 200 }}
+        />
       </S.ModalBackground>
     </Modal>
   )
