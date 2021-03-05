@@ -1,4 +1,4 @@
-export interface peoplePropsReponse {
+export interface peoplesPropsReponse {
   count: number
   results: resultsProps[]
   next: string
