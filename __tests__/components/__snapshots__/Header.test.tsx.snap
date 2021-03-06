@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/Header should render snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#000",
+        "paddingBottom": 20,
+        "paddingTop": 50,
+      },
+    ]
+  }
+>
+  <Image
+    resizeMode="contain"
+    style={
+      Array [
+        Object {
+          "height": 88,
+          "width": 156,
+        },
+      ]
+    }
+    testID="Header_component_default_image"
+  />
+</View>
+`;

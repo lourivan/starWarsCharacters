@@ -1,9 +1,13 @@
 module.exports = {
   preset: 'react-native',
-  setupFilesAfterEnv: ['./scripts/setupJest'],
-  setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect'],
+  setupFilesAfterEnv: ['<rootDir>/scripts/setupJest'],
+  setupFilesAfterEnv: [
+    '@testing-library/jest-native/extend-expect',
+    './node_modules/react-native-gesture-handler/jestSetup.js',
+  ],
   moduleNameMapper: {
-      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
-      "\\.(gif|ttf|eot|svg|png|jpg|jpeg)$": "<rootDir>/__mocks__/fileMock.js"
-    }
+    '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js',
+    '\\.(gif|ttf|eot|svg|png|jpg|jpeg)$': '<rootDir>/__mocks__/fileMock.js',
+  },
+  rootDir: '.',
 }

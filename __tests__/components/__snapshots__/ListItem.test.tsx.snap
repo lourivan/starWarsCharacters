@@ -2,7 +2,7 @@
 
 exports[`Components/ListItem should render snapshot 1`] = `
 <View
-  accessible={false}
+  accessible={true}
   focusable={true}
   onClick={[Function]}
   onResponderGrant={[Function]}
@@ -27,7 +27,6 @@ exports[`Components/ListItem should render snapshot 1`] = `
       ],
     ]
   }
-  testID="TouchableOpacity_listItem"
 >
   <View
     style={
@@ -113,7 +112,11 @@ exports[`Components/ListItem should render snapshot 1`] = `
       </Text>
     </View>
     <Image
-      source="test-file-stub"
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
       style={
         Array [
           Object {

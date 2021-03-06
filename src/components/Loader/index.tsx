@@ -6,8 +6,14 @@ import * as S from './style'
 
 export const Loader = (props) => {
   const { loading } = props
+  const TAG = 'loading'
   return (
-    <Modal transparent={true} animationType={'none'} visible={loading}>
+    <Modal
+      testID='loading'
+      transparent={true}
+      animationType={'none'}
+      visible={loading}
+    >
       <S.ModalBackground>
         <LottieView
           source={require('assets/lottie/star-wars.json')}

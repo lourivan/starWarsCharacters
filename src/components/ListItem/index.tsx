@@ -1,7 +1,6 @@
 import React from 'react'
 
 import * as S from './style'
-import { assignTestId } from '~/utils/qualityAssurance'
 
 export interface ItemProps {
   title: string
@@ -17,7 +16,6 @@ export const ListItem: React.FC<ItemProps> = ({
   const TAG = 'listItem'
   return (
     <S.Item
-      {...assignTestId('TouchableOpacity', TAG)}
       title={title}
       description={description}
       right={(_props) => <S.IconRight />}

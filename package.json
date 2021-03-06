@@ -78,5 +78,8 @@
     "assets": [
       "fonts"
     ]
-  }
+  },
+  "files": [
+    "src/"
+  ]
 }
