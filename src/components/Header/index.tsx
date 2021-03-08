@@ -1,9 +1,7 @@
 import React, { useMemo } from 'react'
-import { Image } from 'react-native'
 import { Appbar } from 'react-native-paper'
 
 import * as S from './style'
-import Logo from 'assets/images/Logo.png'
 export interface HeaderProps {
   type?: 'default' | 'page'
   onBack?: () => void
@@ -22,7 +20,7 @@ export const Header: React.FC<HeaderProps> = ({
     <S.Container>
       <S.ImageHeader
         testID={`${TAG}_default_image`}
-        source={Image.resolveAssetSource(Logo).uri}
+        source={require('assets/images/Logo.png')}
       />
     </S.Container>
   )

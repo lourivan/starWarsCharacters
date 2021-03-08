@@ -1,5 +1,3 @@
-import 'jest-styled-components/native'
-
 import 'react-native-gesture-handler/jestSetup';
 
 jest.mock('react-native-reanimated', () => {

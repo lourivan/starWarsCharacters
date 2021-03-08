@@ -71,9 +71,6 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "jest": {
-    "preset": "react-native"
-  },
   "rnpm": {
     "assets": [
       "fonts"
