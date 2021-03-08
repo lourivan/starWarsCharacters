@@ -1,11 +1,14 @@
 import React from 'react'
 import { StatusBar } from 'react-native'
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper'
-import { ThemeProvider } from 'styled-components/native'
+import {
+  ThemeProvider,
+  DefaultTheme as ThemeDefault,
+} from 'styled-components/native'
 
-import Pages from './pages'
+import Pages from '~/pages'
 
-const theme = {
+export const theme: ThemeDefault = {
   ...DefaultTheme,
   dark: true,
   colors: {

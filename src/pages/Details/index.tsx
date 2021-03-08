@@ -10,7 +10,8 @@ import { Loader } from '~/components/Loader'
 import { ErrorModal } from '~/components/ErrorModal'
 import { displayName } from '~/utils/factors'
 
-const Details: React.FC = ({ route, navigation }: any) => {
+const Details: React.FC<any> = ({ route, navigation }: any) => {
+  const TAG = 'details'
   const { url } = route.params
   const [details, setDetails] = useState<resultsProps>()
   const [loading, setIsloading] = useState<boolean>(true)
@@ -92,7 +93,7 @@ const Details: React.FC = ({ route, navigation }: any) => {
   )
 
   return (
-    <S.Container>
+    <S.Container testID={TAG}>
       {loading && <Loader />}
       {isError && <ErrorModal onRetry={init} />}
       <Header

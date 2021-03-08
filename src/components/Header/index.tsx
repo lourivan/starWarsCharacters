@@ -2,8 +2,7 @@ import React, { useMemo } from 'react'
 import { Appbar } from 'react-native-paper'
 
 import * as S from './style'
-
-interface HeaderProps {
+export interface HeaderProps {
   type?: 'default' | 'page'
   onBack?: () => void
   title?: string
@@ -16,15 +15,19 @@ export const Header: React.FC<HeaderProps> = ({
   title,
   subtitle,
 }) => {
+  const TAG = 'Header_component'
   const DefaultHeader = () => (
     <S.Container>
-      <S.ImageHeader source={require('assets/images/logo.png')} />
+      <S.ImageHeader
+        testID={`${TAG}_default_image`}
+        source={require('assets/images/Logo.png')}
+      />
     </S.Container>
   )
 
   const PageHeader = () => (
     <Appbar.Header>
-      <Appbar.BackAction onPress={onBack} />
+      <Appbar.BackAction testID={`${TAG}_button_back`} onPress={onBack} />
       <Appbar.Content
         title={title}
         subtitle={subtitle}

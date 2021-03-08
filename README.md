@@ -5,6 +5,7 @@ Um Simples aplicativo que lista todos os personagens dos episódios de Star Wars
 ## Alguns recursos utilizados no desenvolvimento:
 
 - Typescript
+- Jest
 - Lottie
 - EsLint
 - Prettier

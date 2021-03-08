@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as S from './style'
 
-interface ItemProps {
+export interface ItemProps {
   title: string
   description?: string
   onPress?: () => void
@@ -13,6 +13,7 @@ export const ListItem: React.FC<ItemProps> = ({
   description = '',
   onPress,
 }) => {
+  const TAG = 'listItem'
   return (
     <S.Item
       title={title}

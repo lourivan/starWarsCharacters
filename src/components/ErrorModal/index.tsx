@@ -6,8 +6,14 @@ import * as S from './style'
 
 export const ErrorModal = (props) => {
   const { isError, onRetry } = props
+  const TAG = 'errorModal'
   return (
-    <Modal transparent={true} animationType={'none'} visible={isError}>
+    <Modal
+      testID={TAG}
+      transparent={true}
+      animationType={'none'}
+      visible={isError}
+    >
       <S.Container>
         <LottieView
           source={require('assets/lottie/error-animation.json')}

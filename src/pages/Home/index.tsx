@@ -13,6 +13,7 @@ import { ErrorModal } from '~/components/ErrorModal'
 import * as S from './style'
 
 const Home: React.FC = ({ navigation }: any) => {
+  const TAG = 'home'
   const [isLoading, setIsloading] = useState<boolean>(true)
   const [data, setData] = useState<peoplesPropsReponse>()
   const [listPeople, setListPeople] = useState<resultsProps[]>([])
@@ -53,7 +54,7 @@ const Home: React.FC = ({ navigation }: any) => {
   )
 
   return (
-    <S.Container>
+    <S.Container testID={TAG}>
       {isError && <ErrorModal onRetry={getPeople} />}
       {isLoading && <Loader />}
       <Header type='default' />
