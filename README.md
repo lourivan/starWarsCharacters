@@ -1,6 +1,6 @@
 # starWarsCharacters
 
-Um Simples aplicativo que lista todos os personagens dos episódios de Star Wars, e exibe suas características no detalhe.
+Aplicação feita em react native que lista todos os personagens dos episódios de Star Wars, e exibe suas características no detalhe.
 
 ## Alguns recursos utilizados no desenvolvimento:
 
